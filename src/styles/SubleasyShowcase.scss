@@ -1,0 +1,78 @@
+.subleasy-showcase {
+    display: grid;
+    grid-template-columns: minmax(800px, 1fr) minmax(600px, 1fr);
+    row-gap: 60px;
+
+    padding: 60px 0 90px 0;
+
+    background: #495ab3;
+    color: white;
+    overflow: scroll;
+
+    .tile-1 {
+        justify-self: center;
+        
+        img {
+            width: 300px;
+        }
+    }
+
+    .tile-2 {
+
+        h2 {
+            margin-bottom: 40px;
+        }
+
+        p {
+            margin-right: 200px;
+        }
+    }
+
+    .tile-3 {
+        justify-self: center;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    .tile-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-right: 100px;
+
+        .grid-item {
+
+            .container {
+                margin: 30px;
+            }
+        }
+
+        .tech-stack, .design-patterns {
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+
+        .links, .contributors {
+            border-bottom: 1px solid white;
+        }
+
+        .tech-stack, .links {
+            border-right: 1px solid white;
+        }
+
+        h5 {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    }
+}
