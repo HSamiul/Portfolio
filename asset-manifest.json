@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.738f26ae.css",
+    "main.js": "/static/js/main.062b7292.js",
+    "static/media/subleasy-screenshot-1.png": "/static/media/subleasy-screenshot-1.e634553a35a2e2b43695.png",
+    "static/media/subleasy-screenshot-2.png": "/static/media/subleasy-screenshot-2.4d2e9b64e8e6d1a87137.png",
+    "static/media/subleasy-screenshot-3.png": "/static/media/subleasy-screenshot-3.817eee175b72d8c0af9b.png",
+    "static/media/subleasy-app-icon.png": "/static/media/subleasy-app-icon.a61f903d108eb5316633.png",
+    "index.html": "/index.html",
+    "main.738f26ae.css.map": "/static/css/main.738f26ae.css.map",
+    "main.062b7292.js.map": "/static/js/main.062b7292.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.738f26ae.css",
+    "static/js/main.062b7292.js"
+  ]
+}
