@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+import ThemeContext from '../contexts'
 import '../styles/SubleasyShowcase.scss'
 import AppIcon from '../images/subleasy-app-icon.png'
 import Screenshot1 from '../images/subleasy-screenshot-1.png'
@@ -5,8 +7,10 @@ import Screenshot2 from '../images/subleasy-screenshot-2.png'
 import Screenshot3 from '../images/subleasy-screenshot-3.png'
 
 function SubleasyShowcase() {
+    const theme = useContext(ThemeContext)
+
     return (
-        <div className='subleasy-showcase'>
+        <div className={`subleasy-showcase ${theme}`}>
             <div className='tile-1'>
                 <img src={AppIcon} />
             </div>
@@ -20,9 +24,12 @@ function SubleasyShowcase() {
             </div>
             
             <div className='tile-3'>
-                <img src={Screenshot1} />
-                <img src={Screenshot2} />
-                <img src={Screenshot3} />
+                <div className="screenshots">
+                    <img src={Screenshot1} />
+                    <img src={Screenshot2} />
+                    <img src={Screenshot3} />
+                </div>
+                
             </div>
 
             <div className='tile-4'>
@@ -66,9 +73,9 @@ function SubleasyShowcase() {
                         <h5>Contributors</h5>
 
                         <ul>
-                            <li>Annie Eng (Project Management)</li>
-                            <li>Samiul Hoque (Software Engineering)</li>
-                            <li>Victoria Zheng (Design)</li>
+                            <li>Annie Eng (Project Manager)</li>
+                            <li>Samiul Hoque (Software Engineer)</li>
+                            <li>Victoria Zheng (Designer)</li>
                         </ul>
                     </div>
                 </div>

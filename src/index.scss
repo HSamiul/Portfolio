@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    transition: background-color 0.3s linear, color 0.1s linear;
 }
 
 body {  
@@ -12,27 +13,53 @@ body {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 5rem;
+    font-weight: 600;
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 4rem;
+    font-weight: 600;
 }
 
 h3 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 h4 {
-    font-size: 2em;
-    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 h5 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
+}
+
+@media (max-width: 480px)  {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
 }

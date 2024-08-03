@@ -1,15 +1,13 @@
 .experience-card {
-    min-width: 800px;
+    min-width: 50rem;
     width: 50%;
-
-    background: #fafafa;
-    padding: 30px 60px 30px 30px;
+    
+    padding: 2rem 4rem 2rem 2rem;
     border-radius: 10px;
 
     .duration {
         display: block;
-        margin-bottom: 10px;
-        color: #616161;
+        margin-bottom: 0.5rem;
     }
 
     .company {
@@ -22,6 +20,48 @@
 
     .description {
         display: block;
-        margin-top: 30px;
+        margin-top: 2rem;
+    }
+}
+
+.experience-card.light {
+    background: #f7f7f7;
+
+    .duration {
+        color: #5c5c5c;
+    }
+}
+
+.experience-card.dark {
+    background-color: #161617;
+
+    .duration {
+        color: #cbcbcb;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-card {
+        min-width: auto;
+        width: auto;
+
+        padding: 2rem;
+        border-radius: 20px;
+
+        .duration {
+            font-size: 1rem;
+        }
+
+        .company {
+            margin-top: 1rem;
+        }
+
+        .role {
+            margin-top: 0.2rem;
+        }
+
+        .description {
+            margin-top: 3rem
+        }
     }
 }
