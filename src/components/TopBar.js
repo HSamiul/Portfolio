@@ -17,7 +17,7 @@ function TopBar() {
                 <FontAwesomeIcon icon={faGithub} size='xl' />
             </a>
 
-            <a className='text' href={window.location.origin + '/Samiul-Hoque-Resume.pdf'} target='_blank'>
+            <a className='text' href={window.location.origin + '/Resume.pdf'} target='_blank'>
                 Resume
             </a>
         </div>

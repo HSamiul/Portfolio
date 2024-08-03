@@ -82,7 +82,7 @@ function SubleasyShowcase() {
                                 </a>
                             </li>
                             <li>
-                                <a href={window.location.origin + '/Subleasy-Promotional-Poster.pdf'} target='_blank'>
+                                <a href={window.location.origin + '/Subleasy Poster.pdf'} target='_blank'>
                                     Poster (credit: Victora)
                                 </a>
                             </li>
