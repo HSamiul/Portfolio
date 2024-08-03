@@ -19,7 +19,22 @@ function SubleasyShowcase() {
                 <h2>Subleasy</h2>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in convallis orci. Duis lacinia arcu quis molestie consectetur. Nulla semper, lectus ac placerat placerat, mauris urna vulputate dui, quis ultricies tortor ante sed sem. Sed elementum lobortis tincidunt. Curabitur ac pharetra ante. Nam venenatis dignissim sem. Nam pulvinar lobortis commodo. Duis eget mauris et lectus consequat tristique. In lacinia augue at velit rhoncus, id tempor lectus scelerisque. Duis auctor volutpat gravida. Nunc eget lorem bibendum, convallis sem quis, faucibus urna. Duis cursus ultricies dui at lobortis. Sed convallis nunc eget fringilla fringilla. Aenean eget mauris lacinia, luctus mi varius, vehicula risus. Pellentesque convallis purus scelerisque orci lobortis, ac tristique magna molestie.
+                    Subleasy is an iOS app that connects people both seeking and providing sublease opportunities. 
+                    It's an all in one package. You can view listings, see useful commute info, create filters to tailor your search, message other users. 
+                    Subleasy can help find housing for students starting an internship in a new city, consultants going on a work trip, or families going on vacation.<br/><br/>
+
+                    Subleasy started as a group project during university. 
+
+                    I naively volunteered to write all the code because I was excited to learn Swift and SwiftUI. 
+                    It was way more work than I knew I was getting myself into, but I have no regrets. 
+                    I fell in love with Swift and it's now my favorite programming language.
+                    I became very familar with powerful design patterns like dependency injection and reactive programming.
+                    I also became a documentation snob. Every library method in Subleasy is documented down to the errors it can throw.<br/><br/>
+
+                    Subleasy has grown as I have grown as developer - It's my passion project.
+                    I'm still developing it to this day and I plan to release to the App Store soon.
+                    There's just some quality of life improvements I want to make first (notifications, UX).
+
                 </p>
             </div>
             
@@ -61,19 +76,26 @@ function SubleasyShowcase() {
                         <h5>Links</h5>
 
                         <ul>
-                            <li><a>Video</a></li>
-                            <li><a>Poster</a></li>
+                            <li>
+                                <a href='https://youtu.be/jHWOUlHT9b0' target='_blank'>
+                                    Video (credit: Victoria)
+                                </a>
+                            </li>
+                            <li>
+                                <a href={window.location.origin + '/Subleasy-Promotional-Poster.pdf'} target='_blank'>
+                                    Poster (credit: Victora)
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-
 
                 <div className='grid-item contributors'>
                     <div className='container'>
                         <h5>Contributors</h5>
 
                         <ul>
-                            <li>Annie Eng (Project Manager)</li>
+                            <li>Annie Eng (Product Manager)</li>
                             <li>Samiul Hoque (Software Engineer)</li>
                             <li>Victoria Zheng (Designer)</li>
                         </ul>
