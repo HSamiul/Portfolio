@@ -11,12 +11,8 @@
 
 @media (max-width: 480px)  {
     .greeting {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
         text-align: center;
-     
+
         span {
             font-size: 1rem;
         }

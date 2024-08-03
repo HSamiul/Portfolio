@@ -26,16 +26,19 @@
     }
 
     .experience-section {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         row-gap: 2rem;
         margin-left: 10rem;
     }
 
     .projects-section {
-
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        
         h3 {
             margin-left: 10rem;
-            margin-bottom: 2rem;
         }
     }
 }
@@ -81,11 +84,9 @@
 
 @media (max-width: 480px)  {
     .app {
-        align-items: center;
         row-gap: 6rem;
 
         .top-bar-section {
-            margin: 0;
             display: flex;
             justify-content: center;
             animation: slide-down 1s ease;
@@ -96,18 +97,17 @@
         }
 
         .experience-section {
-            display: flex;
-            flex-direction: column;
-            row-gap: 3rem;
             align-items: center;
-
+            row-gap: 3rem;
             margin: 1rem;
         }
 
         .projects-section {
+            align-items: center;
+            row-gap: 3rem;
 
             h3 {
-                margin-bottom: 3rem;
+                margin-left: 0;
             }
         }
     }
