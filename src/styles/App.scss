@@ -7,13 +7,13 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: right;
+        justify-content: flex-end;
 
         // sticky properties
         top: 0;
         position: sticky;
-        animation: 0.75s slide-left ease;
         width: 100%;
+        animation: 0.75s slide-left ease;
 
         .theme-toggle {
             cursor: pointer;
@@ -22,7 +22,7 @@
 
     .greeting-section {
         margin-left: 12rem;
-        animation: slide-down 0.75s ease;
+        animation: slide-down-more 0.75s ease;
     }
 
     .experience-section {
@@ -30,12 +30,16 @@
         flex-direction: column;
         row-gap: 2rem;
         margin-left: 10rem;
+
+        animation: slide-down 0.75s ease;
     }
 
     .projects-section {
         display: flex;
         flex-direction: column;
         row-gap: 2rem;
+
+        animation: slide-down 0.75s ease;
         
         h3 {
             margin-left: 10rem;
@@ -62,6 +66,8 @@
         backdrop-filter: blur(40px);
     }
 }
+
+// @supports()
 
 @media (max-width: 1200px)  {
     .app {
@@ -113,25 +119,38 @@
     }
 }
 
+
 @keyframes slide-left {
     from {
         opacity: 0;
-        margin-left: 1%;
+        transform: translateX(2%);
     }
     to {
         opacity: 1;
-        margin-left: 0;
+        transform: translateX(0%);
     }
 }
 
 @keyframes slide-down {
     from {
         opacity: 0;
-        margin-top: -1%;
+        transform: translateY(-2%);
     }
 
     to {
         opacity: 1;
-        margin-bottom: 0;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide-down-more {
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
     }
 }
