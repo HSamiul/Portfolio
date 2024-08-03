@@ -12,7 +12,11 @@ function SubleasyShowcase() {
     return (
         <div className={`subleasy-showcase ${theme}`}>
             <div className='tile-1'>
-                <img src={AppIcon} />
+                <img 
+                    src={AppIcon} 
+                    alt={'Subleasy\'s app icon'} 
+                    title={'Subleasy\'s app icon'}
+                />
             </div>
 
             <div className='tile-2'>
@@ -40,9 +44,22 @@ function SubleasyShowcase() {
             
             <div className='tile-3'>
                 <div className="screenshots">
-                    <img src={Screenshot1} />
-                    <img src={Screenshot2} />
-                    <img src={Screenshot3} />
+                    <img 
+                        src={Screenshot1} 
+                        alt={'A user\'s listing'} 
+                        title={'A user\'s listing'} 
+                    />
+
+                    <img 
+                        src={Screenshot2} 
+                        alt={'Two users messaging'}
+                        title={'Two users messaging'}
+                    />
+                    <img 
+                        src={Screenshot3} 
+                        alt={'A user\'s filters'}
+                        title={'A user\'s filters'}
+                    />
                 </div>
                 
             </div>

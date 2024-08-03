@@ -20,7 +20,14 @@ function App() {
         <ThemeContext.Provider value={theme}>
             <div className={`app ${theme}`}>
                 <div className='top-bar-section'>
-                    <FontAwesomeIcon className='theme-toggle' onClick={toggleTheme} icon={faCircleHalfStroke} size='lg' />
+                    <FontAwesomeIcon 
+                        className='theme-toggle' 
+                        onClick={toggleTheme} 
+                        icon={faCircleHalfStroke} 
+                        size='lg'
+                        title='Toggle theme'
+                    />
+
                     <TopBar />
                 </div>
 
