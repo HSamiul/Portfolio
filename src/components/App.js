@@ -7,13 +7,12 @@ import SubleasyShowcase from './SubleasyShowcase';
 import TopBar from './TopBar';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleHalfStroke } from "@fortawesome/free-solid-svg-icons";
-import { useEffect } from "react";
 
 function App() {
     const [theme, setTheme] = useLocalStorage('theme', 'dark')
 
     const toggleTheme = () => {
-        if (theme == 'light') { setTheme('dark') }
+        if (theme === 'light') { setTheme('dark') }
         else { setTheme('light') }
     }
 
